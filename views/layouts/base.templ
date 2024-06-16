@@ -1,0 +1,22 @@
+package layouts
+
+import "github.com/mwaurathealex/gothstarter/views/components"
+
+templ Base() {
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>Document</title>
+			<link rel="icon" type="image/x-icon" href="/public/favicon.ico"/>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<link rel="stylesheet" href="/public/styles.css"/>
+			<!-- Include the Alpine library on your page -->
+			<script src="https://unpkg.com/alpinejs" defer></script>
+		</head>
+		<body class="antialiased">
+			@components.Navbar()
+			{ children... }
+		</body>
+	</html>
+}
